@@ -119,7 +119,23 @@ const execAsyncFunction2 = async () => {
 }
 
 
-execAsyncFunction2()
+/*execAsyncFunction2()*/
+
+/******************** */
 
 
+const userobj = {
+    user : {
+        nom: "Toto"
+    }
+}
 
+console.log(userobj.user.nom)
+console.log(userobj.user?.prenom?.toto)
+
+let string = "a" + "b" // "ab"
+
+let strA = "a"
+let strB = "b"
+
+let string2 = `${strA} - ${strB}` // "a - b"
