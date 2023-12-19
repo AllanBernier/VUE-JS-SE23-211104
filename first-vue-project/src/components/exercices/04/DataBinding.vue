@@ -16,12 +16,31 @@ Utilisez v-bind pour lier la taille de la police du paragraphe à la valeur de f
 Ajoutez un champ de texte qui permet à l'utilisateur de mettre à jour la valeur de fontSize en temps réel.
 */
 
-let size = 10
+import { reactive } from 'vue';
+
+
+const style = reactive({
+    isRed : true,
+    fontSize : 12
+})
+
 
 </script>
 
 <template>
+    <button v-on:click="style.isRed = !style.isRed"> Change color </button>
+    <input type="number" v-model="style.fontSize">
+
+    <p v-bind:class="{'red' : style.isRed}"
+        v-bind:style="{fontSize : style.fontSize + 'px'}">
+        This is a paragraphe
+    </p>
+
 </template>
 
 <style scoped>
+
+    .red {
+        color: red;
+    }
 </style>

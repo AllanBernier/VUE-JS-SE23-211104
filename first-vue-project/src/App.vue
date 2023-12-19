@@ -1,5 +1,5 @@
 <script setup>
-import Exercice from '@/components/exercices/03/ReactiveVarsExercise.vue'
+import Exercice from '@/components/exercices/10/MyWatch.vue'
 </script>
 
 <template>
