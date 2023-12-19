@@ -1,5 +1,5 @@
 <script setup>
-import Exercice from '@/components/exercices/10/MyWatch.vue'
+import Exercice from '@/components/exercices/12/ParentComponent.vue'
 </script>
 
 <template>
