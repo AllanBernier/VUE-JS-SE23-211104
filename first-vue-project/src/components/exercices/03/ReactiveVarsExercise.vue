@@ -14,10 +14,31 @@ Astuces :
 Utilisez ref pour créer des références réactives simples.
 Utilisez reactive pour créer un objet réactif contenant plusieurs propriétés.
 */
+
+import { ref, reactive } from 'vue';
+
+const counter = ref(0)
+const data = reactive({ counter : 0})
+
 </script>
 
 <template>
+    <input type="number" v-model="counter">
+    <button @click="counter ++">+</button>
+    <button @click="counter --">-</button>
+    <button @click="counter = 0">reset</button>
+
+    <br>
+    <input type="number" v-model="data.counter">
+    <button @click="data.counter ++">+</button>
+    <button @click="data.counter --">-</button>
+    <button @click="data.counter = 0">reset</button>
+
+    <br>
+    {{ data.counter + counter }}
+
 </template>
 
 <style scoped>
+
 </style>

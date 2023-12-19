@@ -13,9 +13,18 @@ Personnalisation :
 Ajoutez une fonctionnalité supplémentaire (effet visuel, changement de texte) en utilisant @click.
 
 */
+
+import { ref } from 'vue';
+
+let clicked = ref(false)
 </script>
 
 <template>
+    <button v-on:click="clicked = !clicked">Click me </button>
+
+
+    {{ clicked }}
+
 </template>
 
 <style scoped>

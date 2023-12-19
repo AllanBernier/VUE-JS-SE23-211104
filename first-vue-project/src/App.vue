@@ -1,11 +1,9 @@
 <script setup>
-import Counter from '@/components/Counter.vue';
-
+import Exercice from '@/components/exercices/03/ReactiveVarsExercise.vue'
 </script>
 
 <template>
-    <counter />
-
+    <Exercice />
 
 
 </template>

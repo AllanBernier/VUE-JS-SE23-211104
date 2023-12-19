@@ -2,7 +2,7 @@
 /**
  * Affichez ce composant
  * 
- * 1. Script import HelloWorld from '@/exercices/01/Helloworld.vue';
+ * 1. Script import HelloWorld from '@/components/exercices/01/Helloworld.vue';
  * 2. Template : <hello-world /> ou <HelloWorld />
  */
 

@@ -15,6 +15,9 @@ Utilisez v-bind pour lier la taille de la police du paragraphe à la valeur de f
 
 Ajoutez un champ de texte qui permet à l'utilisateur de mettre à jour la valeur de fontSize en temps réel.
 */
+
+let size = 10
+
 </script>
 
 <template>
