@@ -1,11 +1,9 @@
 <script setup>
-import Exercice from '@/components/exercices/12/ParentComponent.vue'
+import Exercice from '@/components/exercices/TP/TaskList.vue'
 </script>
 
 <template>
     <Exercice />
-
-
 </template>
 
 <style scoped>
