@@ -6,12 +6,20 @@
  * 2. Template : <hello-world /> ou <HelloWorld />
  */
 
+import useCounter from '@/stores/counterStore.js'
+
+const counterStore = useCounter();
+
+
 </script>
 
 <template>
   <div>
     <h3>
       You've successfully created a project with
+
+
+      {{ counterStore.count }}
     </h3>
   </div>
 </template>
