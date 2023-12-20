@@ -1,11 +1,16 @@
 <script setup>
-import Exercice from '@/components/exercices/TP/TaskList.vue'
+
 </script>
 
 <template>
-    <Exercice />
+
+    <router-link to="/"> Home </router-link>
+    <router-link to="/task"> Task </router-link>
+
+    <br>
+
+    <router-view />
 </template>
 
 <style scoped>
-
 </style>
